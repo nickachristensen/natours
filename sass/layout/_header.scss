@@ -12,10 +12,22 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-    @include respond(phone) {
+    @include respond(tab-land) {
+        margin-bottom: $gutter-vertical-small;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%);
+    }
+
+    @include respond(tab-port) {
         margin-bottom: $gutter-vertical-small;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
+    @include respond(phone) {
+        margin-bottom: $gutter-vertical-small;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
     }
 
     &__logo-box {
